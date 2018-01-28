@@ -1,0 +1,233 @@
+body {
+  color: #eee;
+  background-color: #666;
+}
+.header {
+  width: 100%;
+  background-color: #222;
+  max-height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0px 0px 10px 2px #333;
+}
+
+.header h1 {
+  margin: 0px;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 2em;
+}
+
+.header .navbar {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  margin: 0px;
+  margin-left: 40px;
+  /* min-height: 40px; */
+  padding: 0px;
+  height: 40px;
+
+}
+
+.header .navbar li {
+  display: inline-block;
+  margin: 0px 15px;
+  height: 18px;
+  padding: 0px 10px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+
+  border-bottom: 2px solid transparent;
+}
+
+.header .navbar li.active {
+  background-color: #555;
+  border-bottom-color: #eee;
+}
+
+.header .navbar li a {
+  text-decoration: none;
+  color: #eee;
+  margin-top: 102px;
+}
+.pageContent {
+  margin-top: 40px;
+}
+/* ========================================================================== */
+.welcomeCard {
+  width: 40%;
+  margin: auto;
+  margin-top: 200px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0px;
+  background-color: #555;
+}
+.welcomeCard .welcomeHeader {
+  background-color: #333;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+}
+.welcomeCard .welcomeHeader h1 {
+  margin: 0;
+  text-align: center;
+}
+.welcomeCard .welcomeBody {
+  padding: 10px;
+  text-align: center;
+}
+/* ========================================================================== */
+.searchComponent {
+  width: 80%;
+  padding: 0% 5%;
+  margin: auto;
+}
+
+.searchComponent .centerInput {
+  width: 80%;
+  margin: auto;
+  background-color: #333;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* z-index: 10; */
+  box-shadow: 0px 0px 10px 2px #333;
+}
+.searchComponent .centerInput input {
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.searchComponent .centerInput button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: green;
+  border-color: transparent;
+  color: #fff;
+  font-size: 1.1em;
+}
+/* ========================================================================== */
+.searchResults {
+  background-color: #333;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #333;
+}
+.searchResults .componentHeader {
+  background-color: #222;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.searchResults .componentHeader a {
+  position: relative;
+  bottom: 10px;
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+  height: 40px;
+}
+.searchResults .componentHeader img {
+  max-width: 40px;
+  display: inline-block;
+}
+.searchResults .componentHeader h1 {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  margin-left: 20px;
+}
+.searchResults .repoHeader h1 {
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+}
+.searchResults .searchResultsRepoList {
+  list-style: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.searchResultsRepoList .repoCard {
+  width: 80%;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.searchResultsRepoList .repoCard .repoHeader {
+  padding: 10px;
+  padding-right: 10px;
+  background-color: #222;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.searchResultsRepoList .repoCard .repoHeader a {
+  clear: both;
+  text-decoration: none;
+  color: #fff;
+}
+.searchResultsRepoList .repoCard .repoHeader a .badge {
+  background-color: #555;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px;
+  display: inline;
+  float: right;
+  font-size: .8em;
+}
+.searchResultsRepoList .repoCard .repoHeader a h4 {
+  display: inline-block;
+  margin: 0px;
+  /* margin-left: 10px; */
+  font-size: 1.2em;
+}
+.searchResultsRepoList .repoCard .repoHeader a h4 small {
+  color: #aaa;
+  font-size: 0.8em;
+}
+.searchResultsRepoList .repoCard .description {
+  padding: 10px;
+  margin-left: 20px;
+}
+.searchResultsRepoList .repoCard .meta {
+  clear: both;
+  padding-bottom: 25px;
+  background-color: #222;
+  padding-top: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #aaa;
+}
+.searchResultsRepoList .repoCard .meta span {
+  margin: 0px 10px;
+}
+.searchResultsRepoList .repoCard .meta span i {
+  margin-right: 10px;
+}
+.searchResultsRepoList .repoCard .meta .starsCount {
+  float: left;
+}
+.searchResultsRepoList .repoCard .meta .watchersCount {
+  float: left;
+}
+.searchResultsRepoList .repoCard .meta .sizeText {
+  float: right;
+}
+.searchResultsRepoList .repoCard .meta .updateText {
+  float: right;
+}
